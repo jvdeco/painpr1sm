@@ -17,7 +17,7 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: normal;
-  font-size: 80px;
+  font-size: 7vw; 
   letter-spacing: 1px;
   text-shadow: 0px 1px 45px red;
   text-align: center;
@@ -47,7 +47,7 @@
 	border: 0;
 	white-space: nowrap;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 5vw; 
 	font-weight: 400;
 	cursor: none;
 	border-radius: 3px;
@@ -77,10 +77,11 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: normal;
- font-size: 40px;
+font-size: 3.4vw;
   letter-spacing: 0.5px;
   text-shadow: 2px 2px 76px red;
   text-align: center;}
+
 
 
 .btnresonation {background-color: transparent;
@@ -97,9 +98,10 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: normal;
- font-size: 40px;
   letter-spacing: 0.5px;
   text-shadow: 2px 2px 76px indianred;
+   font-size: 3.4vw; 
+
 }
 
 .btnfulcrum {background-color: transparent;
@@ -116,9 +118,10 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: normal;
- font-size: 40px;
+
   letter-spacing: 0.5px;
   text-shadow: 2px 2px 76px indianred;
+  font-size: 3.4vw;
   text-align: center;}
 
 .btnconnect {background-color: transparent;
@@ -135,9 +138,10 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: normal;
- font-size: 40px;
+
   letter-spacing: 0.5px;
   text-shadow: 2px 2px 76px indianred;
+font-size: 3.4vw;
     text-align: center;
 }
 
