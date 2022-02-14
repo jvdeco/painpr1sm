@@ -1,0 +1,95 @@
+body {
+ background-color: black;
+  -webkit-transform: translateZ(0); // moves the body tag to the GPU, reduces CPU use.
+    transform: translateZ(0);
+  }
+  @-webkit-keyframes argh-my-eyes {
+    0%   { background-color: #fff; }
+    50% { background-color: black; }
+    100% { background-color: black; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: #fff; }
+    50% { background-color: black; }
+    100% { background-color: black; }
+  }
+  @keyframes argh-my-eyes {
+   1%   { background-color: #140201; }
+    50% { background-color: black; }
+    100% { background-color: black; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes 0.01ms infinite;
+  -moz-animation:    argh-my-eyes 0.01ms infinite;
+  animation:         argh-my-eyes 0.01ms infinite;
+}
+
+a {
+	color: darkred;
+	font-size: 35px;	
+	text-decoration: none;
+	font-family: monospace;
+	text-shadow: 0 0 80px rgb(166 16 30 / 100%), 0 0 32px rgb(220 20 60 / 40%);
+	background: url(redstatic.gif) -90% -90%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+
+}
+span {
+  color: white;
+  font-family: monospace;
+  font-weight: lighter;
+  letter-spacing: 7px;
+  font-size: 18px;
+  background: url(static2.gif) -90% -90%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.blinker {
+  opacity: 1;
+  margin-bottom: -2px;
+  height: 5px;
+  margin-left: -5px;
+  border-left: 7px solid darkred;
+  animation: blinker 0.9s steps(2, start) infinite;
+}
+
+
+
+@keyframes blinker {
+  to { 
+    visibility: visible; 
+  }
+}
+
+
+marquee {
+	color: white;
+	
+	 display: flex;
+    flex-direction: row;
+    align-items: flex-start
+    vertical-align:top;
+    font-size: 32px;
+    font-family:  monospace;
+    box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+  animation: marquee 10s linear infinite;
+  white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 1px 6px #777;
+    margin: 0 auto;
+    height: 40px;
+    background: url(static2.gif) -90% -90%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+    }
+}
+
+
+h5 {
+      font-family: monospace;
+      letter-spacing: 3px;
+}

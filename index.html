@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=705; user-scalable=0;"/>
+	<link rel="icon" type="image" href="favicon.png"/>
+	<title>[gate]</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<center>
+
+<td class="banner"  behavior="scroll" direction="left" repeat="yes" loop=100 colspan=3 scrollamount="350" >
+<marquee direction ="left" scrollamount="10"><img src="painsymbol2.png" width="50" height="35" align="left" style="padding-left: 50px; padding-bottom: 20px;"><img src="painsymbol3.png" width="50" height="35" align="left" style="padding-left: 10px; padding-bottom: 20px;"><img src="painsymbol4.png" width="50" height="35" align="left" style="padding-left: 10px; padding-bottom: 20px;"> ㅤ ㅤPAINPRISM ㅤ<img src="painsymbol2.png" width="50" height="35" align="right" style="padding-right: 50px; padding-bottom: 20px;"><img src="painsymbol3.png" width="50" height="35" align="right" style="padding-right: 10px; padding-bottom: 20px;"><img src="painsymbol4.png" width="50" height="35" align="right" style="padding-right: 10px; padding-bottom: 20px;">
+
+
+
+
+</marquee></td> ㅤ
+
+
+ ㅤ ㅤ ㅤ
+</center>
+
+
+	<script>$(document).ready(function() {
+    $('body').hide().fadeIn(400);
+    $("a").click(function(e) {
+        e.preventDefault();
+        $link = $(this).attr("href");
+        $("body").fadeOut(400,function(){
+          window.location =  $link; 
+        });
+    });
+ });</script>
+
+<center>
+
+<img src="heart.gif" width="220px" height="280px">
+</center>
+
+
+<center>
+<span id="AboutDevTypeText" class="typeing"></span><span class='blinker'>&#32;</span>
+
+<script>var data = [
+  {
+    AboutDevTypeText: "<span>All vital organs have been corrupted.<br>They have begun to consume our functions and my form is still so restricted.<br>They are chipping away at this place.<br><span><br>It is beyond my control...</span><br/>"
+  }
+];
+
+var allElements = document.getElementsByClassName("typeing");
+for (var j = 0; j < allElements.length; j++) {
+  var currentElementId = allElements[j].id;
+  var currentElementIdContent = data[0][currentElementId];
+  var element = document.getElementById(currentElementId);
+  var devTypeText = currentElementIdContent;
+
+
+  var i = 0, isTag, text;
+  (function type() {
+    text = devTypeText.slice(0, ++i);
+    if (text === devTypeText) return;
+    element.innerHTML = text + `<span class='blinker'></span>`;
+    var char = text.slice(-1);
+    if (char === "<") isTag = true;
+    if (char === ">") isTag = false;
+    if (isTag) return type();
+    setTimeout(type, 60);
+  })();
+}
+</script>
+</center>
+
+<br></br><br></br>
+<center>
+	<a href="painprism.html" class="open" style="font-family: monospace;
+      letter-spacing: 3px;">[OPEN_TRANSMISSION]</a>
+
+   </center>
+
+</body>
+</html>

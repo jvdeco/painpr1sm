@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>[PAINPRISM]</title>
+	<link href="favicon.png" rel="icon">
+	<link rel="stylesheet" type="text/css" href="painprism.css">
+<style>
+	
+</style>
+</head>
+<body>
+
+
+<div class="container">
+
+
+<div class="cursor"><img src="paincursor.cur" style="height: 47px; width: 40px;"></div>
+
+
+   <script>const cursor = document.querySelector(".cursor")
+
+document.addEventListener("mousemove", (e) => {
+   cursor.style.left = e.pageX + 'px'
+   cursor.style.top = e.pageY + 'px'
+})
+
+
+const links = document.querySelectorAll("a")
+links.forEach((link) => {
+   link.addEventListener("mouseover", () => {
+      cursor.classList.add('link');
+   })
+   link.addEventListener("mouseout", () => {
+      cursor.classList.remove('link');
+   })
+})</script>
+
+<center>
+<h1>PAINPRISM</h1>
+</center>
+
+	
+
+	<button type="button" class="btn btnprogram" onclick="modal('myModal2')">program</button>
+	<div id="myModal2" class="modal">
+		<div class="modalContent modalPrimary">
+			<div class="modalHeader">
+				<span class="modalClose" data-close="true" title="Close">&times;</span>
+			</div>
+			<div class="modalBody">
+				
+
+
+				 <span id="AboutDevTypeText" class="typeing"></span><span class='blinker'>&#32;</span>
+<script>
+  var data = [
+  {
+    AboutDevTypeText: "<span>Full name of subject: <strong>PAINPRISM</strong><br><span>Uploading relevant data now.................. Succesful</span><br><span>((Artist / Entity / Visionary))<br>[Self_Proclaimed]<br></span><strong>PAINPRISM</strong> was born in <strong>[REDACTED]</strong><br>Subject claims to have surpassed humanity, but thorough analysis show no distinct differences from human biology. (See A21 for more information)<br>Spends most of its time pushing keys on a primitive O4 matrix. Enjoys sleeping past its biologycal needs. It appears the subjects seeks something out in its dreams. Further analysis required.<br>...............<br>Has been incubated on W899 in the Vel cluster. Has no viable method of leaving its sun<br>(tethered by the weak force of gravity ((quite shameful)).<br>Habits an area known as [REDACTED]. TRAPPED IN PURGATORIAL STATE) [Note: common stage 6e biosphere]<br>Prefers solitude. Within a margin of error, roughly 0.02%, predictions of how subject will carry out his days are completely acurrate.<br>[Lunar cycles have blended into one everlasting nightmarish hell]<br>Inextricably connected to the fragments.<br>Current investigations has uncovered 91 possible leads, 521 false flags, and 4 likely connections.<br>Probably subject holds relevant key data: 31.6%</span><br/>"
+  }
+];
+
+var allElements = document.getElementsByClassName("typeing");
+for (var j = 0; j < allElements.length; j++) {
+  var currentElementId = allElements[j].id;
+  var currentElementIdContent = data[0][currentElementId];
+  var element = document.getElementById(currentElementId);
+  var devTypeText = currentElementIdContent;
+
+  var i = 0, isTag, text;
+  (function type() {
+    text = devTypeText.slice(0, ++i);
+    if (text === devTypeText) return;
+    element.innerHTML = text + `<span class='blinker'>&#32;</span>`;
+    var char = text.slice(-1);
+    if (char === "<") isTag = true;
+    if (char === ">") isTag = false;
+    if (isTag) return type();
+    setTimeout(type, 45);
+  })();
+}
+</script>
+
+
+
+         
+			</div>
+			<div class="modalFooter">
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<button type="button" class="btn btnresonation" onclick="modal('myModal3')">resonation</button>
+	<div id="myModal3" class="modal">
+		<div class="modalContent modalSuccess">
+			<div class="modalHeader">
+				<span class="modalClose" data-close="true" title="Close">&times;</span>
+			</div>
+			<div class="modalBody">
+				<center>
+				<p class="resonation" style="font-size: 15px; color: red; font-family: monospace;">inicializing resonation.exe...</p></center>
+
+<center>
+<div class="loading1" style="font-size: 10px; color: red; font-family: monospace;">--------------------------------------------------</div>
+
+<center>
+  <h5 class="release">Showing lastest release</h5>
+<br>
+  <button class="recluse" onclick="playSound('recluse.mp3');" style="  
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    font-family: Lucida Console;
+    color: whitesmoke;
+    border-color: red;
+    border-radius: 120px;
+    border-style: dotted;
+    cursor:pointer;
+    overflow: hidden;        
+"> Tap here to play <a style="color: red; font-family: monospace;">"Recluse-13 [prod. ghostie]"</a></button> </center>
+
+<br>
+<center>
+
+	<div class="loading2" style="font-size: 13px; color: red; font-family: monospace;">--- streaming services found ---</div>
+<br>
+   
+
+  <h2 class="spotify" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://open.spotify.com/artist/4dDzuGnfHHnLdILMPM2tKf" target="_blank" style="font-family: monospace; text-decoration: none; color: limegreen;">Spotify</a></h2>
+
+  <h3 class="soundcloud" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://soundcloud.com/painprism" target="_blank" style="font-family: Lucida Console; text-decoration: none; font-weight: normal; color:darkorange;">Soundcloud</a></h3>
+ 
+<h4 class="applemusic" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://music.apple.com/us/artist/painprism/1502176665?l=es" target="_blank" style="font-family: monospace; text-decoration: none; color:dimgrey;">Apple music</a></h4>
+
+  <h5 class="tidal" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://tidal.com/browse/artist/18634986" target="_blank" style="font-family: monospace; text-decoration: none; color:darkslateblue;">Tidal</a></h5>
+ 
+    <h6 class="bandcamp" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://painprism.bandcamp.com" target="_blank" style="font-family: monospace; text-decoration: none; color:steelblue;">Bandcamp</a></h6>
+<br>
+<br>
+<br>
+  <br>
+    <span class="span">v. 23021</span>
+			</div>
+			<div class="modalFooter">
+				
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<button type="button" class="btn btnfulcrum" onclick="modal('myModal4')">fulcrum</button>
+	<div id="myModal4" class="modal">
+		<div class="modalContent modalInfo">
+			<div class="modalHeader">
+				<span class="modalClose" data-close="true" title="Close">&times;</span>
+			</div>
+			<div class="modalBody">
+				<span class="wait" style="font-size: 20px; font-family: monospace;">running <strong>fulcrum.exe</strong>...<br><br><br> please wait...   </span>  
+
+<div class="loading3" style="font-size: 10px; color: red; font-family: monospace;">---------------------------------</div>
+
+  <h3 class="compiling" style="color: red font-size: 30px;">compiling results...</h3>
+<br>
+
+  <span class="instagram" style="color: white;">[social_1.dat] ............ <a href="https://instagram.com/painprism" style="font-family: Lucida Console; text-decoration: none; background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: normal;
+" target="_blank">Instagram</a></span>
+<br>
+  <span class="twitter" style="color: white;">[social_2.dat] ............ <a href="https://twitter.com/painprism1" style="font-family: Lucida Console; text-decoration: none; color:lightblue;" target="_blank">Twitter</a></span>
+  <br>
+
+<span class="ihateu" style="color: red;">[ihateu.exe] ............ Failed</span>
+<br>
+
+  <span class="kys" style="color: red;">[kys.exe] ............ Failed</span>
+  <br>
+
+ 
+  <span class="kms" style="color: red;">[kms.exe] ........... Failed</span>
+<br>
+<br><br>
+
+<br>
+  <span>v. 23021</span>
+			</div>
+			<div class="modalFooter">
+			
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<a href="mailto:painprism@gmail.com" style="text-decoration: none;"><button type="button" class="btn btnconnect" onclick="modal('myModal5')">connect</button></a>
+	
+				
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+<script>
+function modal(id) {
+	var modal = document.getElementById(id);
+	var close = document.querySelectorAll('[data-close="true"]');
+	modal.style.display = 'block';
+	for (var i = 0; i < close.length; i++) {
+		close[i].onclick = function() {
+			modal.style.display = 'none';
+		}
+	}
+	window.onclick = function(e){
+		if (e.target == modal) {
+			modal.style.display = 'none';
+		}
+	};
+	document.onkeydown = function(e) {
+		if (e.keyCode == 27) {
+			modal.style.display = 'none';
+		}
+	};
+}</script>
+
+
+
+
+
+
+<footer style="padding-top: 110px;">
+  <center>
+  <img class="old-gifs" src="osakastamp.gif" width="79" height="36">
+  <img class="old-gifs" src="eyes.gif" width="79" height="36">
+  <img class="old-gifs" src="vilogo.gif" width="79" height="36">
+</body>
+</html>
