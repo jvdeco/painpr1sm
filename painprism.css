@@ -1,463 +1,253 @@
-* {margin: 0;padding: 0}
-
-	body {
-			background-color: black;
-			 background-image: url(https://www.randomim.com/incomplete/Sizzle.gif);
-			
-
-		}
-
-
-		h1 {
-  color: darkred;
-  text-decoration: none;
-  font-family: Royal;
-  text-shadow: 0 0 80px rgb(166 16 30 / 100%), 0 0 32px rgb(220 20 60 / 40%);
-  background: url(redstatic.gif) -90% -90%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: normal;
-  font-size: 65px;
-  text-shadow: 0px 1px 45px red;
-  text-align: center;
-  padding-bottom: 20px;
-
-
-
-
-
-}
-
-.container {
-				 background-image: url(https://www.randomim.com/incomplete/Sizzle.gif);
-
-	margin: 30px auto;
-	max-width: 700px;
-	overflow: hidden;
-	padding: 20px;
-	border-radius: 4px;
-
-}
-.btn {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<title>[PAINPRISM]</title>
+	<link href="favicon.png" rel="icon">
+	<link rel="stylesheet" type="text/css" href="painprism.css">
+<style>
 	
-	background-color: #ddd;
-	color: #000;
+</style>
+</head>
+<body>
 
-	border: 0;
-	white-space: nowrap;
-	text-decoration: none;
-	font-size: 45px; 
-	font-weight: 400;
-	cursor: none;
-	border-radius: 3px;
-	margin: 0 3px 8px 0;
- display: block;
-  width: 50%;
-  margin: 0 auto;
-  padding:10px 3px 10px 3px;
-      margin-bottom: 5px;    
+
+<div class="container">
+
+
+<div class="cursor"><img src="paincursor.cur" style="height: 47px; width: 40px;"></div>
+
+
+   <script>const cursor = document.querySelector(".cursor")
+
+document.addEventListener("mousemove", (e) => {
+   cursor.style.left = e.pageX + 'px'
+   cursor.style.top = e.pageY + 'px'
+})
+
+
+const links = document.querySelectorAll("a")
+links.forEach((link) => {
+   link.addEventListener("mouseover", () => {
+      cursor.classList.add('link');
+   })
+   link.addEventListener("mouseout", () => {
+      cursor.classList.remove('link');
+   })
+})</script>
+
+<center>
+<h1>PAINPRISM</h1>
+</center>
 
 	
 
+	<button type="button" class="btn btnprogram" onclick="modal('myModal2')">program</button>
+	<div id="myModal2" class="modal">
+		<div class="modalContent modalPrimary">
+			<div class="modalHeader">
+				<span class="modalClose" data-close="true" title="Close">&times;</span>
+			</div>
+			<div class="modalBody">
+				
 
 
+				 <span id="AboutDevTypeText" class="typeing"></span><span class='blinker'>&#32;</span>
+<script>
+  var data = [
+  {
+    AboutDevTypeText: "<span>Full name of subject: <strong>PAINPRISM</strong><br><span>Uploading relevant data now.................. Succesful</span><br><span>((Artist / Entity / Visionary))<br>[Self_Proclaimed]<br></span><strong>PAINPRISM</strong> was born in <strong>[REDACTED]</strong><br>Subject claims to have surpassed humanity, but thorough analysis show no distinct differences from human biology. (See A21 for more information)<br>Spends most of its time pushing keys on a primitive O4 matrix. Enjoys sleeping past its biologycal needs. It appears the subjects seeks something out in its dreams. Further analysis required.<br>...............<br>Has been incubated on W899 in the Vel cluster. Has no viable method of leaving its sun<br>(tethered by the weak force of gravity ((quite shameful)).<br>Habits an area known as [REDACTED]. TRAPPED IN PURGATORIAL STATE) [Note: common stage 6e biosphere]<br>Prefers solitude. Within a margin of error, roughly 0.02%, predictions of how subject will carry out his days are completely acurrate.<br>[Lunar cycles have blended into one everlasting nightmarish hell]<br>Inextricably connected to the fragments.<br>Current investigations has uncovered 91 possible leads, 521 false flags, and 4 likely connections.<br>Probably subject holds relevant key data: 31.6%</span><br/>"
+  }
+];
+
+var allElements = document.getElementsByClassName("typeing");
+for (var j = 0; j < allElements.length; j++) {
+  var currentElementId = allElements[j].id;
+  var currentElementIdContent = data[0][currentElementId];
+  var element = document.getElementById(currentElementId);
+  var devTypeText = currentElementIdContent;
+
+  var i = 0, isTag, text;
+  (function type() {
+    text = devTypeText.slice(0, ++i);
+    if (text === devTypeText) return;
+    element.innerHTML = text + `<span class='blinker'>&#32;</span>`;
+    var char = text.slice(-1);
+    if (char === "<") isTag = true;
+    if (char === ">") isTag = false;
+    if (isTag) return type();
+    setTimeout(type, 45);
+  })();
 }
-.btnprogram {background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: none;
-    overflow: hidden;
-    outline: none;
-    color: darkred; 
-  text-decoration: none;
- font-family: "Royal", "Lucida Console", "Helvetica", monospace;
-  text-shadow: 0 0 80px rgb(166 16 30 / 100%), 0 0 32px rgb(220 20 60 / 40%);
-  background: url(redstatic.gif) -90% -90%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: normal;
-    font-size: 40px; 
-  letter-spacing: 0.5px;
-  text-shadow: 2px 2px 76px red;
-  text-align: center;}
+</script>
 
 
 
-.btnresonation {background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: none;
-    overflow: hidden;
-    outline: none;
-    color: darkred; 
-  text-decoration: none;
- font-family: "Royal", "Lucida Console", "Helvetica", monospace;
-  text-shadow: 0 0 80px rgb(166 16 30 / 100%), 0 0 32px rgb(220 20 60 / 40%);
-  background: url(redstatic.gif) -90% -90%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-  text-shadow: 2px 2px 76px indianred;
-    font-size: 40px; 
+         
+			</div>
+			<div class="modalFooter">
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<button type="button" class="btn btnresonation" onclick="modal('myModal3')">resonation</button>
+	<div id="myModal3" class="modal">
+		<div class="modalContent modalSuccess">
+			<div class="modalHeader">
+				<span class="modalClose" data-close="true" title="Close">&times;</span>
+			</div>
+			<div class="modalBody">
+				<center>
+				<p class="resonation" style="font-size: 15px; color: red; font-family: monospace;">inicializing resonation.exe...</p></center>
 
-}
+<center>
+<div class="loading1" style="font-size: 10px; color: red; font-family: monospace;">--------------------------------------------------</div>
 
-.btnfulcrum {background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: none;
-    overflow: hidden;
-    outline: none;
-    color: darkred; 
-  text-decoration: none;
- font-family: "Royal", "Lucida Console", "Helvetica", monospace;
-  text-shadow: 0 0 80px rgb(166 16 30 / 100%), 0 0 32px rgb(220 20 60 / 40%);
-  background: url(redstatic.gif) -90% -90%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: normal;
+<center>
+  <h5 class="release">Showing lastest release</h5>
+<br>
+  <button class="recluse" onclick="playSound('recluse.mp3');" style="  
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    font-family: Lucida Console;
+    color: whitesmoke;
+    border-color: red;
+    border-radius: 120px;
+    border-style: dotted;
+    cursor:pointer;
+    overflow: hidden;        
+"> Tap here to play <a style="color: red; font-family: monospace;">"Recluse-13 [prod. ghostie]"</a></button> </center>
 
-  letter-spacing: 0.5px;
-  text-shadow: 2px 2px 76px indianred;
-    font-size: 40px; 
-  text-align: center;}
+<br>
+<center>
 
-.btnconnect {background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: none;
-    overflow: hidden;
-    outline: none;
-    color: darkred; 
-  text-decoration: none;
- font-family: "Royal", "Lucida Console", "Helvetica", monospace;
-  text-shadow: 0 0 80px rgb(166 16 30 / 100%), 0 0 32px rgb(220 20 60 / 40%);
-  background: url(redstatic.gif) -90% -90%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: normal;
-
-  letter-spacing: 0.5px;
-  text-shadow: 2px 2px 76px indianred;
-    font-size: 40px; 
-    text-align: center;
-}
-
-
-
-
-
-
-
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 2;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modalPrimary .modalHeader, .modalPrimary .modalFooter, .modalPrimary .modalClose {
-	background-color: black;
-	border: 1px solid black;
-	color: red;
-}
-
-.modalSuccess .modalHeader, .modalSuccess .modalFooter, .modalSuccess .modalClose {
-	background-color: black !important;
-	border: 1px solid black;
-	color: red;
-}
-
-.modalInfo .modalHeader, .modalInfo .modalFooter, .modalInfo .modalClose {
-	background-color: black !important;
-	border: 1px solid black;
-	color: red;
-}
-
-.modalWarning .modalHeader, .modalWarning .modalFooter, .modalWarning .modalClose {
-	background-color: #F0AD4E !important;
-	border: 1px solid #F0AD4E;
-	color: #fff;
-}
-
-.modalContent {
-	position: relative;
-	margin: 30px auto;
-	padding: 0;
-	max-width: 600px;
-	border: 1px solid #888;
-	box-shadow: 0 3px 7px rgba(0,0,0,0.4);
-	border-radius: 6px;
-	opacity: 1;
-	transition: opacity 0.4s;
-	animation-name: modalopen;
-	animation-duration: 0.4s;
-	background-color: black;
-}
-.modalHeader {
-	background-color: #f5f5f5;
-	border-bottom: 1px solid #ddd;
-	padding: 13px;
-	font-size: 16px;
-	font-weight: 500;
-	border-radius: 6px 6px 0 0;
-}
-.modalBody {
-	background-color: black;
-	line-height: 22px;
-	padding: 15px;
-}
-.modalFooter {
-	background-color: #f5f5f5;
-	border-top: 1px solid #ddd;
-	border-radius: 0 0 6px 6px;
-	padding: 13px;
-	font-size: 16px;
-	font-weight: 500;
-}
-.modalFooter div {
-	float: right;
-	margin: -7px -10px 0 0;
-}
-.modalClose {
-	color: red;
-	float: right;
-	font-size: 24px;
-	font-weight: bold;
-}
-.modalClose:hover,.modalClose:focus {
-	color: red;
-	text-decoration: none;
-	cursor: pointer;
-}
-@keyframes modalopen {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-@media (max-width: 768px) {
-	.modalContent {
-		width: 94%;
-	}
-	.modalContent {
-		margin: 15px auto;
-	}
-}
- span {
- 	color: red;
-  font-family: monospace;
-  letter-spacing: 3px;
-  font-size: 10px;
-  line-height: 0.5px;
- }
-
- .spotify {
- 	font-family: monospace;
-font-weight: normal;
-letter-spacing: 2px;
-white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 5s;
-    animation: typing 10s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate;
-
-
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes cursor-blink {
-    50% {
-        border-color: transparent;
-    }
-
- }
-
- .soundcloud {
- 	font-family: monospace;
-font-weight: normal;
-letter-spacing: 2px;
-font-family: monospace;
-font-weight: normal;
-letter-spacing: 3px;
-white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 5s;
-    animation: typing 12s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate;
-
- }
-
- .applemusic
-{
-font-family: monospace;
-font-weight: normal;
-letter-spacing: 2px;
-white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 5s;
-    animation: typing 14s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate;
-}
- .tidal
-{ font-family: monospace;
-	font-weight: normal;
-letter-spacing: 2px;
-	white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 5s;
-    animation: typing 15s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate;
-}
- .bandcamp
-{font-family: monospace;
-	font-weight: normal;
-letter-spacing: 2px;
-	white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 5s;
-    animation: typing 19s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate;
-
-}
-
-.resonation {
-	white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(26, end),
-        cursor-blink 0.3s step-end infinite alternate;
-        letter-spacing: 4px;
-        font-size: 10px;
-}
-
-.loading1 { white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 5s;
-    animation: typing 4s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate; }
-
-.release {
-white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 5s;
-    animation: typing 4s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate;
-        color: red; font-family: monospace; font-size: 15px;
-        letter-spacing: 4px;
-}
-
-.recluse {
-	white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 5s;
-    animation: typing 6s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate;
-        letter-spacing: 1px;
-        font-size: 12px;
-}
-
-.loading2 {
-	white-space: nowrap;
-    overflow: hidden;
-     animation-delay: 2s;
-    animation: typing 8s steps(56, end),
-        cursor-blink 0.3s step-end infinite alternate;
-        letter-spacing: 3px;
-
-}
-
-.instagram {font-family: monospace;
-	font-weight: normal;
-	font-size: 10px;
-	letter-spacing: 3px;}
-
-.twitter {font-family: monospace;
-	font-weight: normal;
-	font-size: 10px;
-	letter-spacing: 3px;}
-
-.ihateu {font-family: monospace;
-	font-weight: normal;
-	font-size: 10px;
-	letter-spacing: 3px;}
-
-.kms {font-family: monospace;
-	font-weight: normal;
-	font-size: 10px;
-	letter-spacing: 3px;}
-
-	.kys {font-family: monospace;
-	font-weight: normal;
-	font-size: 10px;
-	letter-spacing: 3px;}
-
-.compiling {font-family: monospace;
-	font-weight: normal;
-	letter-spacing: 3px;
-    color: red;}
-
-.bar {
-	font-family: monospace;
-	font-weight: normal;
-	letter-spacing: 3px;
-
-}
-
-.wait {
-font-family: monospace;
-	font-weight: normal;
-	letter-spacing: 3px;
-}
-
-	* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   cursor: none;
-}
-body {
-   height: 100vh; 
-}
-
-
-.cursor {
-   position: fixed;
-   font-size: 25pt;
-   transform: translate(-50%, -50%);
-   pointer-events: none;
-   transition: font-size .1s ease, opacity .1s ease;
-   filter: drop-shadow(0 0 12px red) brightness(2.2);
-	opacity: .5;
-}
-.cursor.link {
-   font-size: 65pt;
-   opacity: 5;
-}
-
-#cursor.link {
-   font-size: 65pt;
-   opacity: 5;
-}
-
-.fulcrum  {
-	letter-spacing: 2px;
-
-}
-
-.loading3 {
-	white-space: nowrap;
-    overflow: hidden;
+	<div class="loading2" style="font-size: 13px; color: red; font-family: monospace;">--- streaming services found ---</div>
+<br>
    
 
-}
+  <h2 class="spotify" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://open.spotify.com/artist/4dDzuGnfHHnLdILMPM2tKf" target="_blank" style="font-family: monospace; text-decoration: none; color: limegreen;">Spotify</a></h2>
 
+  <h3 class="soundcloud" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://soundcloud.com/painprism" target="_blank" style="font-family: Lucida Console; text-decoration: none; font-weight: normal; color:darkorange;">Soundcloud</a></h3>
+ 
+<h4 class="applemusic" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://music.apple.com/us/artist/painprism/1502176665?l=es" target="_blank" style="font-family: monospace; text-decoration: none; color:dimgrey;">Apple music</a></h4>
+
+  <h5 class="tidal" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://tidal.com/browse/artist/18634986" target="_blank" style="font-family: monospace; text-decoration: none; color:darkslateblue;">Tidal</a></h5>
+ 
+    <h6 class="bandcamp" style="color: white; font-size: 12px;">[resonation.dat] ......... <a href="https://painprism.bandcamp.com" target="_blank" style="font-family: monospace; text-decoration: none; color:steelblue;">Bandcamp</a></h6>
+<br>
+<br>
+<br>
+  <br>
+    <span class="span">v. 23021</span>
+			</div>
+			<div class="modalFooter">
+				
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<button type="button" class="btn btnfulcrum" onclick="modal('myModal4')">fulcrum</button>
+	<div id="myModal4" class="modal">
+		<div class="modalContent modalInfo">
+			<div class="modalHeader">
+				<span class="modalClose" data-close="true" title="Close">&times;</span>
+			</div>
+			<div class="modalBody">
+				<span class="wait" style="font-size: 20px; font-family: monospace;">running <strong>fulcrum.exe</strong>...<br><br><br> please wait...   </span>  
+
+<div class="loading3" style="font-size: 10px; color: red; font-family: monospace;">---------------------------------</div>
+
+  <h3 class="compiling" style="color: red font-size: 30px;">compiling results...</h3>
+<br>
+
+  <span class="instagram" style="color: white;">[social_1.dat] ............ <a href="https://instagram.com/painprism" style="font-family: Lucida Console; text-decoration: none; background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: normal;
+" target="_blank">Instagram</a></span>
+<br>
+  <span class="twitter" style="color: white;">[social_2.dat] ............ <a href="https://twitter.com/painprism1" style="font-family: Lucida Console; text-decoration: none; color:lightblue;" target="_blank">Twitter</a></span>
+  <br>
+
+<span class="ihateu" style="color: red;">[ihateu.exe] ............ Failed</span>
+<br>
+
+  <span class="kys" style="color: red;">[kys.exe] ............ Failed</span>
+  <br>
+
+ 
+  <span class="kms" style="color: red;">[kms.exe] ........... Failed</span>
+<br>
+<br><br>
+
+<br>
+  <span>v. 23021</span>
+			</div>
+			<div class="modalFooter">
+			
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<a href="mailto:painprism@gmail.com" style="text-decoration: none;"><button type="button" class="btn btnconnect" onclick="modal('myModal5')">connect</button></a>
+	
+				
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+<script>
+function modal(id) {
+	var modal = document.getElementById(id);
+	var close = document.querySelectorAll('[data-close="true"]');
+	modal.style.display = 'block';
+	for (var i = 0; i < close.length; i++) {
+		close[i].onclick = function() {
+			modal.style.display = 'none';
+		}
+	}
+	window.onclick = function(e){
+		if (e.target == modal) {
+			modal.style.display = 'none';
+		}
+	};
+	document.onkeydown = function(e) {
+		if (e.keyCode == 27) {
+			modal.style.display = 'none';
+		}
+	};
+}</script>
+
+<script>$("input, textarea").focusout(function(){
+    $('meta[name=viewport]').remove();
+    $('head').append('<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=0">');
+
+    $('meta[name=viewport]').remove();
+    $('head').append('<meta name="viewport" content="width=device-width, initial-scale=yes">' );
+});</script>
+
+
+
+
+
+
+<footer style="padding-top: 110px;">
+  <center>
+  <img class="old-gifs" src="osakastamp.gif" width="79" height="36">
+  <img class="old-gifs" src="eyes.gif" width="79" height="36">
+  <img class="old-gifs" src="vilogo.gif" width="79" height="36">
+</body>
+</html>
